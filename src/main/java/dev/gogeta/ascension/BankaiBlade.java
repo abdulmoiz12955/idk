@@ -38,8 +38,10 @@ public class BankaiBlade extends Item {
     @Override
     public UseAnim getUseAnimation(ItemStack stack) { return UseAnim.BOW; }
 
-    @Override
-    public int getUseDuration(ItemStack stack) { return MAX_USE; }
+  @Override
+public int getUseDuration(ItemStack stack, LivingEntity entity) {
+    return MAX_USE;
+}
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
